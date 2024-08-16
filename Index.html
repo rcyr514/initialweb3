@@ -1,10 +1,10 @@
 <!DOCTYPE html>
---  <script src="./CSS/jquery.slim.min.js"></script>  -->
+
  
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Index</title>
+  <title>Le Tiers Impartial</title>
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/bootstrap.min.css">
@@ -41,20 +41,21 @@
       background-color: blue;
     }
 
-    .jc1-image {
+
+ <!--       .jc1-image {
      background-image: url("./Images/th42m.gif");  
 	 
-	    <!-- background-image: url("./Images/th42m.gif"), url("./Images/bgnoir1.gif"); ---->
+	 background-image: url("./Images/th42m.gif"), url("./Images/bgnoir1.gif");    
       background-color: rgb(75, 80, 90);
-      width: 30%;
+      width: 0%;
       height: 800px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       position: absolute;
-    }
+    } ---->
 	
-    .jc1-text {
+   .jc1-text {
       width: 100%;
       text-align: center;
       position: absolute;
@@ -62,7 +63,8 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
-    
+
+  
   .rightcolumn {
       right: 0px;
 	  <!-- background-image: url("./Images/bgnoir2.gif"); ----> 
@@ -98,6 +100,17 @@
       font-family: "BODONI mt";
       top: 30%;
     }
+	
+	hr { 
+		display: block;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		margin-left: auto;
+		margin-right: auto;
+		border-style: inset;
+		border-width: 4px;
+		width: 20%;
+	} 
 	  
   </style>
   
@@ -140,7 +153,7 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link " href="../Index/Index.html">
+            <a class="nav-link " href="./index.html">
               <p style="color: rgb(255, 255, 255); font-family: Helvitica; font-size: 12px;">
                 Accueil
               </p>
@@ -192,10 +205,9 @@
   <!-- ------------------------------------------------------------- ---->
  
 
-  <div class="jc1-image" id="myImg">
-  </div>
+
   
-  <div class="rightcolumn"  id="myRight"  style= "background-image:url(./Images/bgnoir2.gif); background-repeat: repeat;  "  >
+  <div class="rightcolumn"  id="myRight"  style= "background-image:url(./Images/th51.jpg);  "  >
   
   <p style="color: rgb(75, 80, 90); font-family: Helvitica; font-size: 1px; padding-top: 120px;"></p>
   
@@ -203,25 +215,19 @@
  
 	<table   style="width:100%;" >
     <tr>
-		<th    ><h1 style="width:30%, font-size: 70px;">
-        <center>
-       
-        <p   style="color: rgb(75, 80, 90); font-family: BODONI mt; padding-left: 100px"></p></a>
-        </center>
-        </h1>
-      </th>
-	  
+	    
       <th><h1 style="font-size: 70px;">
         <center>
         <a class="nav-link" href="../JCA3/JCA3.html">
-        <p  id="Lien1" style="color: rgb(49, 132, 155); font-family: BODONI mt;">Le<br>Tiers<br>Impartial</p></a>
-		<br>
+        <p  id="Lien1" style="color: rgb(255, 255, 255); font-family: BODONI mt;">LE<br>TIERS<br>IMPARTIAL</p></a>
+		
+		<hr>
 		<a class="nav-link" href="../Lecture/Lecture.html">
-        <p  id="Lien2" style="color: rgb(255, 255, 255); font-family: BODONI mt;">Lecture</p></a>
+        <p  id="Lien2" style="color: rgb(255, 255, 255); font-family: BODONI mt;">LECTURE</p></a>
 		
         </center>
         </h1>
-      </th>
+      </th>  
 
     </tr>
 	</table>
@@ -230,9 +236,9 @@
 
   <script>
 
-  images1 = "url(./Images/marbre20.jpg)";
-  images2 = "url(./Images/breve2.jpg)";
-  images3 = "url(./Images/bgnoir2.gif)";
+  images1 = "url(./Images/th53.jpg)";
+  images2 = "url(./Images/th45.jpg)";
+  images3 = "url(./Images/th51.jpg)";
 
   document.getElementById("Lien1").onmouseover = function() {changeImage11()};
   document.getElementById("Lien1").onmouseout = function() {changeImage33()};
