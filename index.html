@@ -38,9 +38,23 @@
     .fakeimg {
 		width: 100%;
 		height: 400px;
-		background-color: blue;
+	<!--	background-color: blue; -->
     }
+
+
 	
+	
+	
+	a.link1:link {color:white;}
+	a.link1:visited {color:white;}
+	a.link1:hover {color:LightYellow;}
+	
+	a.link2:link {color:white;}
+	a.link2:visited {color:white;}
+	a.link2:hover {color:LightYellow;}
+
+
+
 	.rightcolumn {
 		right: 0px;
 		<!-- background-image: url("./Images/bgnoir2.gif"); ----> 
@@ -52,8 +66,20 @@
 		padding-left: 0px;
 		background-position: center	  ;
 		background-repeat: no-repeat;
-		background-size: cover;  
+		background-size: cover; 
+
     }	
+	
+	#myRight {
+		background-image:url("./Images/th53.jpg");
+	}		
+			
+	@keyframes roue {
+		0%   {background-image:url("./Images/th53.jpg");}
+		33%  {background-image:url("./Images/th51.jpg");}
+		66%  {background-image:url("./Images/th45.jpg");}
+		100% {background-image:url("./Images/th53.jpg");}
+	}
    
     .logo {
 		position: absolute;
@@ -99,9 +125,25 @@
 	}
 	
 	@media only screen and (max-width: 600px) {
+	
+		#myRight {
+			background-image:url("./Images/th53.jpg");
+			animation-name: roue;
+			animation-duration:20s;
+			animation-iteration-count: infinite
+		} 
+	
+	
 		#plogo {
 			color: rgb(255, 255, 255);
 		}
+		
+		#Lien1, #Lien2 {
+		color: rgb(255, 255, 255); 
+		font-family: Helvetica Neue;  
+		text-align: center;
+		}
+		
 	}
 	  
   </style>
@@ -214,9 +256,9 @@
 	<!-- ------------------------------------------------------------- ---->
  
   
-<div class="rightcolumn"  id="myRight"  style= "background-image:url(./Images/th53.jpg);  "  >
+<div class="rightcolumn"  id="myRight"    >
   
-	<p style="color: rgb(75, 80, 90); font-family: Helvitica; font-size: 1px; padding-top: 120px;"></p>
+	<p style="color: rgb(75, 80, 90); font-family: Helvitica; font-size: 1px; padding-top: 220px;"></p>
   
 	<center>
  
@@ -224,16 +266,16 @@
     <tr >	    
 		<th><h1 style="font-size: 70px;">
         <center>
-        <a class="nav-link" href="../JCA3/JCA3.html">
-        <p  id="Lien1" >LE<br>TIERS<br>IMPARTIAL</p></a>
+        <p  id="Lien1" ><a class="link1" href="../JCA3/JCA3.html">
+        LA FIRME</p></a>
 		<hr>
 		</th>
 	</tr>
 	
 	<tr >
 		<th><h1 style="font-size: 70px;">		
-		<a class="nav-link" href="../Lecture/Lecture.html">
-        <p  id="Lien2" >LECTURE</p></a>		
+		<p  id="Lien2" ><a class="link2" href="../Lecture/Lecture.html">
+        LE BLOGUE</p></a>		
         </center>
         </h1>
 		</th>  
@@ -256,7 +298,7 @@
 
 	function changeImage11() {
 		var el = document.getElementById('myRight');
-		el.style.backgroundImage = images1;
+		el.style.backgroundImage = images1;	
 	}
 
 	function changeImage22() {
