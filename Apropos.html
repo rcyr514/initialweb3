@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link href="./CSS/gwdimage_style.css" rel="stylesheet" data-version="17" data-exports-type="gwd-image">
+  <script src="./CSS/jquery.min.js"></script>
+  <script src="./CSS/popper.min.js"></script>
+  <script src="./CSS/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./CSS/w3.css">
+  <link rel="stylesheet" href="./CSS/font-awesome.min.css">
+  <script src="./CSS/bootstrap.bundle.min.js"></script> 
+	
+	
+	
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./Images/jc1.jpg');
+  min-height: 100%;
+}
+
+    #Clogo {
+		position: absolute;
+		left: 50px;
+		color: red;
+		height: 10px;
+		font-family: "BODONI mt";
+		top: 20%;
+    }
+	
+	#pli {
+		color: rgb(255, 255, 255);
+		font-family: Helvitica;
+		font-size: 14px;
+	}
+	
+	#pHeader {
+		color: rgb(0, 0, 0);
+		font-family:  BODONI mt;
+		font-size: 32px;		
+	}
+	
+	#plogo {
+		color: rgb(0, 0, 0);
+		font-family:  BODONI mt;
+		font-size: 14px;		
+	}
+	
+	#NAVbutton {
+		background-color: rgb(150, 150, 150);
+	}
+	
+	.dropdown {
+		float: right;
+		position: relative;
+		display: inline-block;
+	}
+    .dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: rgb(120, 120, 120);
+		min-width: 60px;
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
+		right: 0;
+		z-index: 1;
+    }
+    .dropdown-content a {
+		color: rgb(255, 255, 255); 
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+    }
+    .dropdown:hover .dropdown-content {
+		display: block;
+    }
+	
+	.navbar{
+		background-image: url("./Images/nav1.jpg");
+		background-position: center	  ;
+		background-repeat: no-repeat;
+		background-size: cover; 	
+	}
+	
+	@media only screen and (max-width: 700px) {
+	
+		#plogo {
+			color: rgb(255, 255, 255);
+		}
+		
+		#Lien1, #Lien2 {
+			color: rgb(255, 255, 255); 
+			font-family: Helvetica Neue;  
+			text-align: center;
+		}
+	}
+	
+	
+	
+	
+</style>
+</head>
+<body>
+
+
+<div class="w3-container">  
+    <nav class="navbar navbar-expand-md navbar-dark gwd-nav-1g2p fixed-top ;" >
+      <div class="logo" id="Clogo">
+        <a class="nav-link " href="./index.html"> <p id="plogo">LE TIERS IMPARTIAL</p><br></a>
+      </div>
+      <button id="NAVbutton" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
+        <span class="navbar-toggler-icon">       </span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-auto">
+            <a class="nav-link " href="./Apropos.html">
+              <p id="pli" >
+                À propos
+              </p>
+            </a>
+          </li>
+          <li class="nav-item ml-auto dropdown">
+            <a class="nav-link" href="#">
+              <!--  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">---->
+              <p id="pli" >
+                Nos services
+              </p>
+            </a>
+            <div class="dropdown-content ml-auto">
+            <p id="pli" >
+                <a class="dropdown-item" href="./Enquete/Enquete.html">Enquête</a>
+                <a class="dropdown-item" href="./Mediation/Mediation.html">Résolution des conflits</a>
+                <a class="dropdown-item" href="./Analyse/Analyse.html">Analyse du climat de travail</a>
+                <a class="dropdown-item" href="./Accompagnement/Accompagnement.html">Soutien & conseils</a>
+              </p>
+            </div>
+          </li>
+
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="../Contact/Contact.html">
+              <p id="pli" >
+                Nous joindre
+              </p>
+            </a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="../Lecture/Lecture.html">
+              <p id="pli" >
+                Lecture
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+</div>    
+
+
+	<!-- ------------------------------------------------------------- ---->
+	
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small " style="width:40%;top: 90px;">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<!-- <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="   display:block;    padding-top:150px;right:0;z-index:2; width:60%; " id="mySidebar"> -->
+
+<!-- <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>  -->
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%;top: 90px;">">
+
+  <!-- Menu icon to open sidebar -->
+  <!--  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span> -->
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo" style="font-family:  BODONI mt;">Le Tiers Impartial</h1>
+	<br>
+    <p id="pHeader">Me Julie Cyr</p>
+    <img src="./Images/jc1.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="./Images/jc1.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>NOTRE FIRME</h2>
+    <hr class="w3-opacity">
+    <p>Ayant été initiée à la langue latine durant son parcours académique et portant un intérêt pour la mythologie grecque, c’est le bandeau qui couvre les yeux de Thémis, déesse de la justice, qui inspira Me Cyr à fonder Le Tiers Impartial Inc. Ce symbole représente l’impartialité et cette ligne de conduite est au cœur de notre approche. <br><br>
+Le Tiers Impartial Inc. est une firme qui offre des services juridiques sans toutefois représenter les personnes devant les tribunaux. Nous agissons uniquement à titre de tiers neutre et impartial dans le cadre de prévention, résolution et gestion des différends en milieu de travail. Nous avons acquis une expertise pour aider les gestionnaires et les personnes intervenantes en ressources humaines à rétablir ou maintenir un milieu de travail sain dans leur organisation. Nous intervenons tant auprès des organisations publiques que privées, et ce, dans divers secteurs d’activités. 
+    </p>
+	</div>
+	
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>NOS SERVICES</h2>
+    <hr class="w3-opacity">
+    
+	
+<div class="w3-card-4">
+	<header class="w3-container w3-light-grey">
+	<h3>ENQUÊTE ADMINISTRATIVE</h3>
+	</header>
+
+	<div class="w3-container">
+		<p><br>Une personne de votre organisation se plaint ou signale une situation s’apparentant du harcèlement psychologique, sexuel, discriminatoire ?
+		<br><br>
+		Ou encore, les éléments allégués sont de l’ordre d’un manquement en vertu d’une politique organisationnelle ou d’un code de conduite ? 
+		<br><br>
+		Faites appel à notre service d’enquête et nous ferons la lumière sur ces évènements. Notre opinion juridique analysant le bienfondé ou non de la plainte ou du signalement sera contenue dans un rapport clair et concis.
+		</p>
+	</div>
+	
+	<button class="w3-button w3-light-white w3-padding-small w3-section" style="margin-left:5px">
+      	<a href="../Accompagnement/Accompagnement.html">
+        <p style=" font-family: Helvitica; text-align: center; opacity: 0.5">
+           Pour en savoir plus
+        </p>
+        </a>
+    </button>
+	
+</div>	
+<br><br>	
+<div class="w3-card-4">
+	<header class="w3-container w3-light-grey">
+	<h3>RÉSOLUTION DES CONFLITS</h3>
+	</header>
+
+	<div class="w3-container">
+		<p><br>Des tensions palpables, des désaccords importants ou un même un conflit a éclaté impliquant des employés ou des gestionnaires de votre organisation? 
+		<br><br>
+		Une personne qui agit à titre de médiatrice peut aider les parties à trouver un accord qui répond à leurs besoins et intérêts communs et légitimes. En effet, le médiateur agit de façon neutre et impartiale tout au long du processus tout en créant des conditions permettant de faciliter la communication entre les parties.
+		</p>
+	</div>
+	
+	<button class="w3-button w3-light-white w3-padding-small w3-section" style="margin-left:5px">
+      	<a href="../Accompagnement/Accompagnement.html">
+        <p style=" font-family: Helvitica; text-align: center; opacity: 0.5">
+           Pour en savoir plus
+        </p>
+        </a>
+    </button>
+			
+</div>	
+<br><br>
+<div class="w3-card-4">
+	<header class="w3-container w3-light-grey">
+	<h3>ANALYSE DU CLIMAT DE TRAVAIL</h3>
+	</header>
+
+	<div class="w3-container">
+		<p><br>La <i>Loi sur les normes du travail</i>, qui est d’ordre public, oblige les employeurs à fournir à leurs employés un milieu de travail sain. Qu’en est-il dans votre organisation ? Est-elle à la hauteur de de ce que vous souhaitez atteindre?
+		<br><br>
+		Telle une photo prise de l’organisation, l’analyse du climat de travail permet d’établir un bilan des enjeux organisationnels, structurels et relationnels qui influencent le climat de travail. Nous vous proposons une méthodologie qui s’est avérée efficace ainsi que des recommandations adaptées et sur mesure. 
+		</p>
+	</div>
+	
+	<button class="w3-button w3-light-white w3-padding-small w3-section" style="margin-left:5px">
+      	<a href="../Accompagnement/Accompagnement.html">
+        <p style=" font-family: Helvitica; text-align: center; opacity: 0.5">
+           Pour en savoir plus
+        </p>
+        </a>
+    </button>
+	
+</div>	
+<br><br>	
+<div class="w3-card-4">
+	<header class="w3-container w3-light-grey">
+	<h3>SOUTIEN, CONSEILS ET ACCOMPAGNEMENT</h3>
+	</header>
+
+	<div class="w3-container">
+		<p><br>Vous êtes une personne gestionnaire ou intervenante en ressources humaines? Vous avez besoin de soutien, de conseils ou d’accompagnement en matière de harcèlement, d’incivilité ou de discrimination en milieu de travail? Contactez-nous pour un service personnalisé.  
+		</p>
+	</div>
+	
+	<button class="w3-button w3-light-white w3-padding-small w3-section" style="margin-left:5px">
+      	<a href="../Accompagnement/Accompagnement.html">
+        <p style=" font-family: Helvitica; text-align: center; opacity: 0.5">
+           Pour en savoir plus
+        </p>
+        </a>
+    </button>
+	
+</div>	
+<br><br>	
+	
+<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+	<h2>Un mot sur la fondatrice</h2>
+    <hr class="w3-opacity">
+		<p>Me Julie Cyr agit exclusivement à titre de tiers neutre et impartial depuis le début de sa carrière. Membre du Barreau du Québec depuis 2016, Me Cyr est accréditée par son ordre professionnel à titre d’avocate menant des enquêtes en harcèlement psychologique en milieu de travail et à titre de médiatrice en matière civile, commerciale et en milieu de travail. Elle détient également un certificat en criminologie de l’Université de Montréal. 
+		<br><br>
+		Auparavant, Me Julie Cyr était gestionnaire d’une équipe spécialisée en enquête pour l’une des plus grandes villes du Canada. Elle a dirigé des enquêtes complexes, judiciarisées et médiatisées. Elle a également exercé dans un cabinet d’envergure provinciale qui est spécialisé en matière de prévention et règlements des différends en milieu de travail. Elle a aussi travaillé à titre d’enquêtrice pour un organisme public ayant comme mission la promotion des droits et des obligations en matière d’emploi. 
+		</p>	
+</div>
+
+</div>
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
