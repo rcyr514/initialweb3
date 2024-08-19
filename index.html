@@ -38,7 +38,6 @@
     .fakeimg {
 		width: 100%;
 		height: 400px;
-	<!--	background-color: blue; -->
     }
 
 
@@ -46,14 +45,17 @@
 	
 	
 	a.link1:link {color:white;}
-	a.link1:visited {color:white;}
-	a.link1:hover {color:LightYellow;}
+	a.link1:visited {color:white;text-decoration: none;}
+	a.link1:hover {color:LightYellow; text-decoration: none;}
 	
 	a.link2:link {color:white;}
-	a.link2:visited {color:white;}
-	a.link2:hover {color:LightYellow;}
+	a.link2:visited {color:white; text-decoration: none;}
+	a.link2:hover {color:LightYellow; text-decoration: none;}
 
-
+table, th, td {
+  border: 4px solid;
+  padding: 0px;
+}
 
 	.rightcolumn {
 		right: 0px;
@@ -71,14 +73,14 @@
     }	
 	
 	#myRight {
-		background-image:url("./Images/th53.jpg");
+		background-image:url("./Images/th53a.jpg");
 	}		
 			
 	@keyframes roue {
-		0%   {background-image:url("./Images/th53.jpg");}
+		0%   {background-image:url("./Images/th53a.jpg");}
 		33%  {background-image:url("./Images/th51.jpg");}
 		66%  {background-image:url("./Images/th45.jpg");}
-		100% {background-image:url("./Images/th53.jpg");}
+		100% {background-image:url("./Images/th53a.jpg");}
 	}
    
     .logo {
@@ -94,6 +96,7 @@
 		color: rgb(255, 255, 255); 
 		font-family: BODONI mt;  
 		text-align: center;
+		font-size: 70px;
 	}
 	
 	hr { 
@@ -103,8 +106,8 @@
 		margin-left: auto;
 		margin-right: auto;
 		border-style: inset;
-		border-width: 4px;
-		width: 40%;
+		border-width: 0px;
+		width: 0%;
 	} 
 	  	  
 	#pli {
@@ -113,10 +116,17 @@
 		font-size: 14px;
 	}
 	
+	#Ppad {
+		color: rgb(75, 80, 90); 
+		font-family: Helvitica; 
+		font-size: 1px; 
+		padding-top: 240px;
+	}
+	
 	#plogo {
 		color: rgb(0, 0, 0);
-		font-family: Helvitica;
-		font-size: 14px;	
+		font-family:  BODONI mt;
+		font-size: 16px;		
 	}
 	
 	#NAVbutton {
@@ -127,24 +137,30 @@
 	@media only screen and (max-width: 600px) {
 	
 		#myRight {
-			background-image:url("./Images/th53.jpg");
+			background-image:url("./Images/th53a.jpg");
 			animation-name: roue;
 			animation-duration:20s;
 			animation-iteration-count: infinite
 		} 
-	
 	
 		#plogo {
 			color: rgb(255, 255, 255);
 		}
 		
 		#Lien1, #Lien2 {
-		color: rgb(255, 255, 255); 
-		font-family: Helvetica Neue;  
-		text-align: center;
+			color: rgb(255, 255, 255); 
+			font-family: Helvetica Neue;  
+			text-align: center;
 		}
 		
-	}
+		#hrLien {
+			width: 60%;
+			border-width: 4px;
+		}
+		
+		#Ppad {
+			padding-top: 140px;		
+		}
 	  
   </style>
   
@@ -194,7 +210,7 @@
 <div>  
     <nav class="navbar navbar-expand-md navbar-dark gwd-nav-1g2p fixed-top ;" >
       <div class="logo">
-        <p id="plogo">LE TIERS IMPARTIAL INC.</p>
+        <a class="nav-link " href="./index.html"> <p id="plogo">LE TIERS IMPARTIAL</p><br></a>
       </div>
       <button id="NAVbutton" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
         <span class="navbar-toggler-icon">       </span>
@@ -205,13 +221,6 @@
           <li class="nav-item ml-auto">
             <a class="nav-link " href="./index.html">
               <p id="pli" >
-                Accueil
-              </p>
-            </a>
-          </li>
-          <li class="nav-item ml-auto">
-            <a class="nav-link " href="../JCA3/JCA3.html">
-              <p id="pli" >
                 À propos
               </p>
             </a>
@@ -220,15 +229,15 @@
             <a class="nav-link" href="#">
               <!--  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">---->
               <p id="pli" >
-                Services
+                Nos services
               </p>
             </a>
             <div class="dropdown-content ml-auto">
             <p id="pli" >
                 <a class="dropdown-item" href="./Enquete/Enquete.html">Enquête</a>
-                <a class="dropdown-item" href="./Mediation/Mediation.html">Médiation</a>
-                <a class="dropdown-item" href="./Analyse/Analyse.html">Analyse</a>
-                <a class="dropdown-item" href="./Accompagnement/Accompagnement.html">Accompagnement</a>
+                <a class="dropdown-item" href="./Mediation/Mediation.html">Résolution des conflits</a>
+                <a class="dropdown-item" href="./Analyse/Analyse.html">Analyse du climat de travail</a>
+                <a class="dropdown-item" href="./Accompagnement/Accompagnement.html">Soutien & conseils</a>
               </p>
             </div>
           </li>
@@ -254,41 +263,60 @@
 </div>    
 
 	<!-- ------------------------------------------------------------- ---->
- 
-  
+
 <div class="rightcolumn"  id="myRight"    >
   
-	<p style="color: rgb(75, 80, 90); font-family: Helvitica; font-size: 1px; padding-top: 220px;"></p>
+	<p id="Ppad"></p>
+  
+  	<!-- ------------------------------------------------------------- ---->
+ 
+<div class="container mt-5">
+  <div class="row">
+    <div class="mx-auto" >
+        <p  id="Lien1" ><a class="link1" href="../JCA3/JCA3.html">
+        NOTRE<br>EXPERTISE</p></a>
+			<center>
+	<hr id="hrLien">
+	</center>
+    </div>
+
+    <div class="mx-auto" >
+        <p  id="Lien2" ><a class="link2" href="../JCA3/JCA3.html">
+        COIN<br>LECTURE</p></a>
+    </div>
+  </div>
+</div>
+
+	<!-- ------------------------------------------------------------- 
   
 	<center>
  
-	<table   style="width:30%;" >
+	<table   style="width:50%;" >
     <tr >	    
 		<th><h1 style="font-size: 70px;">
         <center>
         <p  id="Lien1" ><a class="link1" href="../JCA3/JCA3.html">
-        LA FIRME</p></a>
-		<hr>
+        NOTRE EXPERTISE</p></a>
+		</h1>
 		</th>
-	</tr>
-	
-	<tr >
+
 		<th><h1 style="font-size: 70px;">		
 		<p  id="Lien2" ><a class="link2" href="../Lecture/Lecture.html">
-        LE BLOGUE</p></a>		
+        NOTRE EXPERTISE</p></a>		
         </center>
         </h1>
 		</th>  
     </tr>
 	</table>
 
-	</center>
+	</center>   ---->
+   
 
 	<script>
 
 		images1 = "url(./Images/th51.jpg)";
 		images2 = "url(./Images/th45.jpg)";
-		images3 = "url(./Images/th53.jpg)";
+		images3 = "url(./Images/th53a.jpg)";
 
 		document.getElementById("Lien1").onmouseover = function() {changeImage11()};
 		document.getElementById("Lien1").onmouseout = function() {changeImage33()};
