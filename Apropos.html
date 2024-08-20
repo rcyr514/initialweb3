@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="./CSS/bootstrap.min.css">
@@ -19,7 +19,7 @@
 		
 	
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 .bgimg {
   background-position: center;
@@ -135,60 +135,45 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </head>
 <body>
 
-<div>  
-    <nav class="navbar navbar-expand-md navbar-dark gwd-nav-1g2p fixed-top ;" >
-      <div class="logo" id="Clogo">
-        <a class="nav-link " href="./index.html"> <p id="plogo">LE TIERS IMPARTIAL</p><br></a>
-      </div>
-      <button id="NAVbutton" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
-        <span class="navbar-toggler-icon">       </span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ml-auto">
-            <a class="nav-link " href="./Apropos.html">
-              <p id="pli" >
-                À propos
-              </p>
-            </a>
-          </li>
-          <li class="nav-item ml-auto dropdown">
-            <a class="nav-link" href="#">
-              <!--  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">---->
-              <p id="pli" >
-                Nos services
-              </p>
-            </a>
-            <div class="dropdown-content ml-auto">
-            <p id="pli" >
-                <a class="dropdown-item" href="./Enquete/Enquete.html">Enquête</a>
-                <a class="dropdown-item" href="./Mediation/Mediation.html">Résolution des conflits</a>
-                <a class="dropdown-item" href="./Analyse/Analyse.html">Analyse du climat de travail</a>
-                <a class="dropdown-item" href="./Accompagnement/Accompagnement.html">Soutien & conseils</a>
-              </p>
-            </div>
-          </li>
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-light-grey w3-theme-d2 w3-wide w3-padding w3-card   ">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+	<a href="./index.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-home w3-margin-right"></i>LE TIERS IMPARTIAL</a>
+	<a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-right">Lecture</a> 
+	<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Nous joindre</a>  
+    <div class=" w3-bar-item w3-dropdown-hover w3-hide-small w3-right">
+		<button class="w3-button" title="Notifications" >Nos services <i class="fa fa-caret-down"></i></button>     
+			<div class="w3-dropdown-content w3-card-1 w3-bar-block">
+			  <a href="#" class="w3-bar-item w3-button">Enquête</a>
+			  <a href="#" class="w3-bar-item w3-button">Résolution des conflits</a>
+			  <a href="#" class="w3-bar-item w3-button">Analyse du climat de travail</a>
+			  <a href="#" class="w3-bar-item w3-button">Soutien & conseils</a>
+			</div>
+	</div>  
+	<a href="./Apropos.html" class="w3-bar-item w3-button w3-hide-small w3-right">À propos</a> 
 
-          <li class="nav-item ml-auto">
-            <a class="nav-link" href="../Contact/Contact.html">
-              <p id="pli" >
-                Nous joindre
-              </p>
-            </a>
-          </li>
-          <li class="nav-item ml-auto">
-            <a class="nav-link" href="../Lecture/Lecture.html">
-              <p id="pli" >
-                Lecture
-              </p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+ </div>
 
-</div> 
+	<!-- ------------------------------------------------------------- ---->
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-light-grey w3-theme-d2 w3-padding w3-card w3-hide w3-hide-large w3-hide-medium">
+	<a href="./Apropos.html" class="w3-bar-item w3-button">À propos</a> 
+	<a href="#pricing" class="w3-bar-item w3-button">Nous joindre</</a> 
+	<a href="#" class="w3-bar-item w3-button">Lecture</a> 
+    <div class="w3-dropdown-hover w3-right">
+		<button class="w3-button" title="Notifications">Nos services <i class="fa fa-caret-down"></i></button>     
+			<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+			  <a href="#" class="w3-bar-item w3-button">Enquête</a>
+			  <a href="#" class="w3-bar-item w3-button">Résolution des conflits</a>
+			  <a href="#" class="w3-bar-item w3-button">Analyse du climat de travail</a>
+			  <a href="#" class="w3-bar-item w3-button">Soutien & conseils</a>
+			</div>
+	</div>
+	<a href="#" class="w3-bar-item w3-button"></a> 		
+
+  </div>
+</div>
 	<!-- ------------------------------------------------------------- ---->
 	
 <!-- Sidebar with image -->
@@ -212,7 +197,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </nav>  -->
 
 <!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%;top: 90px;">">
+<div class="w3-main w3-padding-large" style="margin-left:40%;top: 90px;">
 
   <!-- Menu icon to open sidebar -->
   <!--  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span> -->
@@ -359,15 +344,19 @@ Le Tiers Impartial Inc. est une firme qui offre des services juridiques sans tou
 
 
 <script>
-// Open and close sidebar
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
 function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+
+
 </script>
 
 </body>
