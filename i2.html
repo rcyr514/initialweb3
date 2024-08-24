@@ -31,6 +31,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
   background-image: url('./Images/rh5a.jpg');
   background-position-x: center;
   min-height: 100%;
+  position: relative;
+  z-index: 1;
 }
 </style>
   
@@ -47,6 +49,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
   height: 500px;
 }
 
+
+.w3-sidebar{
+  position: relative;
+  z-index: 1;
+}
+
+.w3-dropdown-content{
+  position: absolute;
+  z-index: 2;
+  }
+
 </style>
 </head>
 <body>
@@ -58,8 +71,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 	<a href="./index.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-home w3-margin-right"></i>LE TIERS IMPARTIAL</a>
 	<a href="./Lecture.html" class="w3-bar-item w3-button w3-hide-small w3-right">Lecture</a> 
 	<a href="./Contact.html" class="w3-bar-item w3-button w3-hide-small w3-right">Nous joindre</a>  
-    <div class="  w3-dropdown-hover w3-hide-small w3-right">
-		<button class="w3-button" title="Notifications" >Nos services <i class="fa fa-caret-down"></i></button>     
+	<div class="  w3-dropdown-hover w3-hide-small w3-right">
+		<button class="w3-button w3-wide"  >Nos services</button>     
 			<div class="w3-dropdown-content w3-card-4 w3-bar-block">
 			  <a href="./Enquete.html" class="w3-bar-item w3-button">Enquête</a>
 			  <a href="./Conflits.html" class="w3-bar-item w3-button">Résolution des conflits</a>
@@ -68,7 +81,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 			</div>
 	</div>  
 	<a href="./Apropos.html" class="w3-bar-item w3-button w3-hide-small w3-right">À propos</a> 
-
  </div>
 
 	<!-- ------------------------------------------------------------- ---->
@@ -78,7 +90,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 	<a href="./Contact.html" class="w3-bar-item w3-button">Nous joindre</</a> 
 	<a href="./Lecture.html" class="w3-bar-item w3-button">Lecture</a> 
     <div class="w3-dropdown-hover w3-right">
-		<button class="w3-button" title="Notifications">Nos services <i class="fa fa-caret-down"></i></button>     
+		<button class="w3-button" >Nos services</button>     
 			<div class="w3-dropdown-content w3-card-4 w3-bar-block">
 			  <a href="./Enquete.html" class="w3-bar-item w3-button">Enquête</a>
 			  <a href="./Conflits.html" class="w3-bar-item w3-button">Résolution des conflits</a>
@@ -87,33 +99,53 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 			</div>
 	</div>
 	<a href="#" class="w3-bar-item w3-button"></a> 		
-
   </div>
 </div>
 	<!-- ------------------------------------------------------------- ---->
 	
-<!-- Sidebar with image -->
-<nav class="w3-sidebar  " style="width:100%;top: 90px;">
-  <div class="bgimg"></div>
- 
-  
-  
-   <div class="w3-display-middle w3-large w3-container  w3-black"style="width:100%;">
-   <center>
-	<p></p><a class="link1" id="Lien1" style="padding-right: 0px;" href="./Apropos.html">NOTRE<br>EXPERTISE</a></p>
- 
-	<p></p><a class="link2" id="Lien2" style="padding-left: 0px;"  href="./Lecture.html">COIN<br>LECTURE</a></p>
-</center>
- </div>
+<!-- Sidebar with image 
+<nav class="w3-sidebar w3-hide-medium w3-hide-small " style="width:100%;top: 90px;">
 
+  <div class="bgimg"></div>
+</nav>  -->
+	<!-- ------------------------------------------------------------- ---->
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding 60px 1px" id="home">
+	<img src="./Images/rh5a.jpg" class="w3-image w3-hide-small w3-hide-medium w3-round" style="display:block;width:100%;margin:auto;">
+    <img src="./Images/rh5a.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="./Images/rh5a.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" style="display:block;width:100%;min-width: 400px;margin:auto;">
+  </header>
   
   
-</nav>
+<!-- Page Content -->
+
+	
+    <div class="w3-display-middle w3-large w3-container  "style="width:100%;">
+    <center>
+	<a class="link1" id="Lien1" style="padding-right: 0px; font-size: 32px;" href="./Apropos.html">NOTRE<br>EXPERTISE</a>
+ <br><br><br>
+	<a class="link2" id="Lien2" style="padding-left: 0px; font-size: 32px;"  href="./Lecture.html">COIN<br>LECTURE</a>
+	</center>
+	</div>
+
 
 
 <!-- END PAGE CONTENT -->
 
+<script>
 
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
 
 
 
